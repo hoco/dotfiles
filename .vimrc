@@ -35,6 +35,13 @@ au! BufNewFile,BufRead *.js setf javascript
 "vundle
 set rtp+=~/.vim/vundle.git/
 call vundle#rc()
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'Shougo/unite.vim'
+Bundle 'Shougo/neocomplcache'
 Bundle 'thinca/vim-quickrun'
+Bundle 'thinca/vim-ref'
 filetype plugin indent on     " required
 
+"neocomplcache
+" Use neocomplcache.
+let g:neocomplcache_enable_at_startup = 1
