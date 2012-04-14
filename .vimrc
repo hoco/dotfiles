@@ -1,7 +1,7 @@
 "新しい行のインデントを現在行と同じにする
 set autoindent
 "バックアップファイルを作るディレクトリ
-set backupdir=$HOME/.vimbackup
+set backupdir=$HOME/.vim/backup
 "タブの代わりに空白文字を挿入する
 set expandtab
 "タブ文字、行末など不可視文字を表示する
@@ -40,6 +40,8 @@ Bundle 'Shougo/unite.vim'
 Bundle 'Shougo/neocomplcache'
 Bundle 'thinca/vim-quickrun'
 Bundle 'thinca/vim-ref'
+Bundle 'tpope/vim-rails'
+Bundle 'scrooloose/nerdtree'
 filetype plugin indent on     " required
 
 "neocomplcache
