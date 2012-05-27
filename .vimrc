@@ -11,7 +11,7 @@ set listchars=eol:$,tab:>\ ,extends:<
 "行番号を表示する
 set number
 "シフト移動幅
-set shiftwidth=4
+set shiftwidth=2
 "閉じ括弧が入力されたとき、対応する括弧を表示する
 set showmatch
 "新しい行を作ったときに高度な自動インデントを行う
