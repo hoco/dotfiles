@@ -26,11 +26,9 @@ set visualbell
 set splitright
 
 syntax on
+filetype on
 
-"filetype検出
-au! BufNewFile,BufRead *.rb setf ruby
-au! BufNewFile,BufRead *.scala setf scala
-au! BufNewFile,BufRead *.js setf javascript 
+autocmd BufNewFile,BufRead *.coffee set filetype=coffee
 
 "vundle
 set rtp+=~/.vim/vundle.git/
@@ -42,6 +40,7 @@ Bundle 'thinca/vim-quickrun'
 Bundle 'thinca/vim-ref'
 Bundle 'tpope/vim-rails'
 Bundle 'scrooloose/nerdtree'
+Bundle 'kchmck/vim-coffee-script'
 filetype plugin indent on     " required
 
 "neocomplcache
