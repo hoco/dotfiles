@@ -23,3 +23,7 @@ setopt hist_ignore_dups
 setopt hist_reduce_blanks
 setopt share_history
 setopt EXTENDED_HISTORY
+
+PROMPT="[%n@%m %~] %(!.#.$) "
+PROMPT2="%_> "
+SPROMPT="correct: %R -> %r [nyae]? "
