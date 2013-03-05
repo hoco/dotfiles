@@ -1,6 +1,6 @@
 #!/bin/sh
 cd $(dirname $0)
-files=(.vim .vimrc .zshrc .gvimrc)
+files=(.vim .vimrc .zshrc .zprofile .gvimrc .tmux.conf .zprofile .pryrc)
 
 for dotfile in ${files[@]} 
 do
