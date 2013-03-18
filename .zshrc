@@ -6,6 +6,7 @@ export MANPATH=/opt/local/share/man:/opt/local/man:$MANPATH
 alias ls='ls -G'
 
 if [[ -s $HOME/.pythonbrew/etc/bashrc ]] ; then source $HOME/.pythonbrew/etc/bashrc; fi
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 autoload -U compinit
 compinit
