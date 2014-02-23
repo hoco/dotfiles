@@ -32,6 +32,10 @@ syntax on
 
 autocmd BufNewFile,BufRead *.coffee set filetype=coffee
 
+function! s:meet_neocomplete_requirements()
+  return has('lua') && (v:version > 703 || (v:version == 703 && has('patch885')))
+endfunction
+
 "NeoBundle
 if has('vim_starting')
   set runtimepath+=~/.vim/neobundle.vim
@@ -39,18 +43,23 @@ if has('vim_starting')
 endif
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'Shougo/unite.vim'
-NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'thinca/vim-ref'
 NeoBundle 'tpope/vim-rails'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'kchmck/vim-coffee-script'
+if s:meet_neocomplete_requirements()
+  NeoBundle 'Shougo/neocomplete.vim'
+endif
 filetype plugin on
 filetype indent on
 
-"neocomplcache
-" Use neocomplcache.
-let g:neocomplcache_enable_at_startup = 1
+"neocomplete
+if s:meet_neocomplete_requirements()
+  let g:neocomplete#enable_at_startup = 1
+  let g:neocomplete#enable_smart_case = 1
+  let g:neocomplete#force_overwrite_completefunc = 1
+endif
 
 "ディレクトリ自動作成
 augroup vimrc-auto-mkdir  " {{{
