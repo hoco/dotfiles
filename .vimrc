@@ -1,3 +1,6 @@
+set nocompatible
+filetype off
+
 "新しい行のインデントを現在行と同じにする
 set autoindent
 "バックアップファイルを作るディレクトリ
@@ -26,22 +29,24 @@ set visualbell
 set splitright
 
 syntax on
-filetype on
 
 autocmd BufNewFile,BufRead *.coffee set filetype=coffee
 
-"vundle
-set rtp+=~/.vim/vundle.git/
-call vundle#rc()
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'Shougo/unite.vim'
-Bundle 'Shougo/neocomplcache'
-Bundle 'thinca/vim-quickrun'
-Bundle 'thinca/vim-ref'
-Bundle 'tpope/vim-rails'
-Bundle 'scrooloose/nerdtree'
-Bundle 'kchmck/vim-coffee-script'
-filetype plugin indent on     " required
+"NeoBundle
+if has('vim_starting')
+  set runtimepath+=~/.vim/neobundle.vim
+  call neobundle#rc(expand('~/.vim/bundle/'))
+endif
+NeoBundle 'altercation/vim-colors-solarized'
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'Shougo/neocomplcache'
+NeoBundle 'thinca/vim-quickrun'
+NeoBundle 'thinca/vim-ref'
+NeoBundle 'tpope/vim-rails'
+NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'kchmck/vim-coffee-script'
+filetype plugin on
+filetype indent on
 
 "neocomplcache
 " Use neocomplcache.
