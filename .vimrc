@@ -48,6 +48,7 @@ NeoBundle 'thinca/vim-ref'
 NeoBundle 'tpope/vim-rails'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'kchmck/vim-coffee-script'
+NeoBundle 'slim-template/vim-slim'
 NeoBundle 'LeafCage/yankround.vim'
 if s:meet_neocomplete_requirements()
   NeoBundle 'Shougo/neocomplete.vim'
