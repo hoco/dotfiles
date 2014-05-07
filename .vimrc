@@ -82,3 +82,9 @@ nmap gp <Plug>(yankround-gp)
 nmap gP <Plug>(yankround-gP)
 nmap <C-p> <Plug>(yankround-prev)
 nmap <C-n> <Plug>(yankround-next)
+
+"swap/backup/undo settings
+set backup
+set undodir=~/.vim/backup
+set backupdir=~/.vim/backup
+set directory=~/.vim/backup
