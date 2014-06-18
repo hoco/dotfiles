@@ -4,6 +4,7 @@ export PATH=/opt/local/bin:opt/local/sbin:/usr/local/mysql/bin:/Applications/and
 export MANPATH=/opt/local/share/man:/opt/local/man:$MANPATH
 
 alias ls='ls -G'
+alias be='bundle exec'
 
 if [[ -s $HOME/.pythonbrew/etc/bashrc ]] ; then source $HOME/.pythonbrew/etc/bashrc; fi
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
