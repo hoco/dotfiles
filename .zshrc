@@ -29,7 +29,7 @@ PROMPT="[%n@%m %~] %(!.#.$) "
 PROMPT2="%_> "
 SPROMPT="correct: %R -> %r [nyae]? "
 
-#scm info
+# scm info
 autoload -Uz vcs_info
 zstyle ':vcs_info:*' formats '[%b]'
 zstyle ':vcs_info:*' actionformats '[%b|%a]'
@@ -39,3 +39,20 @@ precmd () {
   [[ -n "$vcs_info_msg_0_" ]] && psvar[1]="$vcs_info_msg_0_"
 }
 RPROMPT="%1(v|%F{green}%1v%f|)"
+
+# peco-select-history
+# See: http://shibayu36.hatenablog.com/entry/2014/06/27/223538
+function peco-select-history() {
+  local tac
+  if which tac > /dev/null; then
+    tac="tac"
+  else
+    tac="tail -r"
+  fi
+  BUFFER=$(history -n 1 | \
+    eval $tac | \
+    peco --query "$LBUFFER")
+  CURSOR=$#BUFFER
+}
+zle -N peco-select-history
+bindkey '^r' peco-select-history
