@@ -56,3 +56,9 @@ function peco-select-history() {
 }
 zle -N peco-select-history
 bindkey '^r' peco-select-history
+
+# agvim
+# See: http://qiita.com/fmy/items/b92254d14049996f6ec3
+function agvim () {
+  vim $(ag $@ | peco --query "$LBUFFER" | awk -F : '{print "-c " $2 " " $1}')
+}
