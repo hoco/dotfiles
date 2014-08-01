@@ -1,0 +1,3 @@
+set vertical-split = no
+set diff-context = 5
+set wrap-lines = yes
