@@ -91,3 +91,6 @@ set backup
 set undodir=~/.vim/backup
 set backupdir=~/.vim/backup
 set directory=~/.vim/backup
+
+"vim-json
+let g:vim_json_syntax_conceal = 0
