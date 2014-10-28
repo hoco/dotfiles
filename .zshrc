@@ -1,6 +1,6 @@
 export LANG=ja_JP.UTF-8
 export LSCOLORS=gxfxcxdxbxegedabagacad
-export PATH=/opt/local/bin:opt/local/sbin:/usr/local/mysql/bin:/Applications/android-sdk/platform-tools:$PATH
+export PATH=/opt/local/bin:opt/local/sbin:/usr/local/mysql/bin:/Applications/android-sdk/platform-tools:$HOME/.nodebrew/current/bin:$PATH
 export MANPATH=/opt/local/share/man:/opt/local/man:$MANPATH
 
 alias ls='ls -G'
