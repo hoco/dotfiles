@@ -55,6 +55,7 @@ if s:meet_neocomplete_requirements()
 endif
 NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'elzr/vim-json'
+NeoBundle 'GutenYe/json5.vim'
 
 filetype plugin on
 filetype indent on
