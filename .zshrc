@@ -3,6 +3,7 @@ export LSCOLORS=gxfxcxdxbxegedabagacad
 export GOPATH=$HOME/.go
 export PATH=/opt/local/bin:opt/local/sbin:/usr/local/mysql/bin:/Applications/android-sdk/platform-tools:$HOME/.nodebrew/current/bin:$GOPATH/bin:$PATH
 export MANPATH=/opt/local/share/man:/opt/local/man:$MANPATH
+export EDITOR=/usr/bin/vim
 
 alias ls='ls -G'
 alias be='bundle exec'
