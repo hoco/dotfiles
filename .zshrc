@@ -11,6 +11,8 @@ alias be='bundle exec'
 if [[ -s $HOME/.pythonbrew/etc/bashrc ]] ; then source $HOME/.pythonbrew/etc/bashrc; fi
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
+bindkey -e
+
 autoload -U compinit
 compinit
 setopt autopushd
