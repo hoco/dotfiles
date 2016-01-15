@@ -27,6 +27,8 @@ set tabstop=2
 set visualbell
 "分割時は右に分割
 set splitright
+"ペースト時に0レジスタを使う
+noremap p "0p
 
 syntax on
 
