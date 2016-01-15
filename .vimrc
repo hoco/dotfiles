@@ -55,7 +55,7 @@ NeoBundle 'LeafCage/yankround.vim'
 if s:meet_neocomplete_requirements()
   NeoBundle 'Shougo/neocomplete.vim'
 endif
-NeoBundle 'kien/ctrlp.vim'
+NeoBundle 'ctrlpvim/ctrlp.vim'
 NeoBundle 'elzr/vim-json'
 NeoBundle 'GutenYe/json5.vim'
 
