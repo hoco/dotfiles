@@ -56,6 +56,7 @@ if s:meet_neocomplete_requirements()
   NeoBundle 'Shougo/neocomplete.vim'
 endif
 NeoBundle 'ctrlpvim/ctrlp.vim'
+NeoBundle 'rking/ag.vim'
 NeoBundle 'elzr/vim-json'
 NeoBundle 'GutenYe/json5.vim'
 
@@ -100,3 +101,9 @@ let g:vim_json_syntax_conceal = 0
 
 "nerdtree
 let NERDTreeShowHidden=1
+
+"ctrlp + ag.vim
+if executable('ag')
+  let g:ctrlp_use_caching=0
+  let g:ctrlp_user_command='ag %s -i --nocolor --nogroup -g ""'
+endif
