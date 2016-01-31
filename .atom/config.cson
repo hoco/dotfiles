@@ -1,0 +1,35 @@
+"*":
+  "atom-ctags":
+    buildTimeout: 60000
+    cmdArgs: "--exclude=\"*.js\""
+  "atom-fuzzy-grep": {}
+  "autocomplete-plus": {}
+  core:
+    disabledPackages: [
+      "symbols-view"
+    ]
+    themes: [
+      "one-dark-ui"
+      "base16-ocean-dark-spacegray"
+    ]
+  editor:
+    fontSize: 12
+    invisibles: {}
+    preferredLineLength: 100
+    showInvisibles: true
+    softWrap: true
+  "exception-reporting":
+    userId: "5f39c3c1-1f89-2eaa-ef0d-46680b268fa9"
+  "git-projects":
+    rootPath: "/Users/hoco/project;/Users/hoco/dev"
+  metrics:
+    userId: "49da3ff5825f72e184cf94b9aa8ba2da03e521e8"
+  minimap:
+    plugins:
+      "git-diff": true
+      "minimap-autohide": true
+  "release-notes":
+    viewedVersion: "0.92.0"
+  "vim-mode-plus": {}
+  welcome:
+    showOnStartup: false
