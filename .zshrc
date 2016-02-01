@@ -69,3 +69,9 @@ function agvim () {
 
 # direnv
 eval "$(direnv hook zsh)"
+
+# The next line updates PATH for the Google Cloud SDK.
+source '/usr/local/y/google-cloud-sdk/path.zsh.inc'
+
+# The next line enables shell command completion for gcloud.
+source '/usr/local/y/google-cloud-sdk/completion.zsh.inc'
