@@ -21,7 +21,7 @@
   "exception-reporting":
     userId: "5f39c3c1-1f89-2eaa-ef0d-46680b268fa9"
   "git-projects":
-    rootPath: "/Users/hoco/project;/Users/hoco/dev"
+    rootPath: "/Users/hoco/project;/Users/hoco/dev;/Users/asahara/project;/Users/asahara/dev;"
   metrics:
     userId: "49da3ff5825f72e184cf94b9aa8ba2da03e521e8"
   minimap:
