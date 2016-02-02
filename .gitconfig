@@ -1,0 +1,17 @@
+[include]
+  path = ~/.gitconfig.local
+[core]
+  editor = vim
+[push]
+  default = simple
+[color]
+  ui = auto
+[core]
+  pager = less -r
+  excludesfile = ~/.gitignore.global
+[alias]
+  delete-merged = !git branch --merged | grep -v \\* | xargs -I % git branch -d %
+[filter "lfs"]
+  clean = git-lfs clean %f
+  smudge = git-lfs smudge %f
+  required = true
