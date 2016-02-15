@@ -1,7 +1,7 @@
 export LANG=ja_JP.UTF-8
 export LSCOLORS=gxfxcxdxbxegedabagacad
 export GOPATH=$HOME/.go
-export PATH=/opt/local/bin:opt/local/sbin:/usr/local/mysql/bin:/Applications/android-sdk/platform-tools:$HOME/.nodebrew/current/bin:$GOPATH/bin:/usr/local/bin:$PATH
+export PATH=/opt/local/bin:opt/local/sbin:/usr/local/mysql/bin:/Applications/android-sdk/platform-tools:$HOME/.nodebrew/current/bin:$GOPATH/bin:/usr/local/bin:/opt/chefdk/bin:$PATH
 export MANPATH=/opt/local/share/man:/opt/local/man:$MANPATH
 export EDITOR=/usr/bin/vim
 
