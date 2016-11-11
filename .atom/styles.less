@@ -1,0 +1,17 @@
+// visible highlight on finding result
+atom-text-editor::shadow .highlight {
+  &.find-result .region,
+  &.current-result .region,
+  &.current-result ~ .highlight.selection .region {
+    z-index: -1;
+  }
+
+  &.find-result .region {
+    background: #555555;
+  }
+
+  &.current-result .region,
+  &.current-result ~ .highlight.selection .region {
+    background: #777777;
+  }
+}
