@@ -1,13 +1,25 @@
 "*":
+  "atom-beautify":
+    _analyticsUserId: "0625259b-c00b-4908-96a5-8d9c1cfb2380"
+    general:
+      _analyticsUserId: "15b34b3d-a101-42fc-b988-edcbd3ceb0c3"
   "atom-ctags":
-    buildTimeout: 60000
+    autoBuildTagsWhenActive: true
+    buildTimeout: 120000
     cmdArgs: "--exclude=\"*.js\""
-  "atom-fuzzy-grep": {}
+  "atom-fuzzy-grep":
+    detectGitProjectAndUseGitGrep: false
   "autocomplete-plus": {}
   core:
+    allowPendingPaneItems: false
     disabledPackages: [
       "symbols-view"
+      "spell-check"
     ]
+    packagesWithKeymapsDisabled: [
+      "git-blame"
+    ]
+    telemetryConsent: "limited"
     themes: [
       "one-dark-ui"
       "base16-ocean-dark-spacegray"
@@ -22,14 +34,18 @@
     userId: "5f39c3c1-1f89-2eaa-ef0d-46680b268fa9"
   "git-projects":
     rootPath: "/Users/hoco/project;/Users/hoco/dev;/Users/asahara/project;/Users/asahara/dev;"
+  "highlight-line": {}
   metrics:
     userId: "49da3ff5825f72e184cf94b9aa8ba2da03e521e8"
   minimap:
     plugins:
       "git-diff": true
+      "git-diffDecorationsZIndex": 0
       "minimap-autohide": true
+      "minimap-autohideDecorationsZIndex": 0
   "release-notes":
     viewedVersion: "0.92.0"
+  "tree-view": {}
   "vim-mode-plus": {}
   welcome:
     showOnStartup: false
