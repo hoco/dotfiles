@@ -76,3 +76,15 @@ if [ -e /usr/local/google-cloud-sdk ]; then
   # The next line enables shell command completion for gcloud.
   source '/usr/local/google-cloud-sdk/completion.zsh.inc'
 fi
+
+# See: http://ukstudio.jp/2015/03/26/open_pull_request/
+function find-pr() {
+  local parent=$2||'master'
+  git log $1..$2 --merges --ancestry-path --reverse --oneline | head -n1
+}
+
+function find-pr-open() {
+  local pr="$(find-pr $1 $2 | awk '{print substr($5, 2)}')"
+  local repo="$(git config --get remote.origin.url | sed 's/git@github.com://' | sed 's/\.git$//')"
+  open "https://github.com/${repo}/pull/${pr}"
+}
