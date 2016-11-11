@@ -21,5 +21,7 @@
   'shift-cmd-j': 'atom-ctags:go-to-declaration'
   'shift-cmd-k': 'atom-ctags:return-from-declaration'
   # atom-fuzzy-grep
-  'shift-cmd-G': 'unset!'
-  'shift-cmd-G': 'fuzzy-grep:toggle'
+  'shift-cmd-g': 'unset!'
+  'shift-cmd-g': 'fuzzy-grep:toggle'
+  # git-blame
+  'shift-cmd-v': 'git-blame:toggle'
