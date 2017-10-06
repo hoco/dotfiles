@@ -88,3 +88,8 @@ function find-pr-open() {
   local repo="$(git config --get remote.origin.url | sed 's/git@github.com://' | sed 's/\.git$//')"
   open "https://github.com/${repo}/pull/${pr}"
 }
+
+# zsh-completions
+if [ -e /usr/local/share/zsh-completions ]; then
+  fpath=(/usr/local/share/zsh-completions $fpath)
+fi
