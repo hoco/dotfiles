@@ -93,3 +93,5 @@ function find-pr-open() {
 if [ -e /usr/local/share/zsh-completions ]; then
   fpath=(/usr/local/share/zsh-completions $fpath)
 fi
+
+[ -f ~/.zshrc.local ] && source ~/.zshrc.local
