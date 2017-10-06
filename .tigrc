@@ -3,3 +3,4 @@ set diff-context = 5
 set wrap-lines = yes
 
 bind status D !@?rm %(file)
+bind generic P @sh -c 'hub browse -- commit/%(commit)'
