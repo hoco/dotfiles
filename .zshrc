@@ -93,3 +93,14 @@ if [ -e /usr/local/share/zsh-completions ]; then
 fi
 
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
+
+# See: https://qiita.com/yuku_t/items/4ffaa516914e7426419a
+function ssh() {
+  if tmux ls > /dev/null 2>&1; then
+    local window_name=$(tmux display -p '#{window_name}')
+    command ssh $@
+    tmux rename-window $window_name > /dev/null 2>&1
+  else
+    command ssh $@
+  fi
+}
