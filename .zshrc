@@ -7,6 +7,8 @@ export EDITOR=/usr/bin/vim
 
 alias ls='ls -G'
 alias be='bundle exec'
+alias decolor='sed -E "s/"$'\''\E'\''"\[([0-9]{1,3}((;[0-9]{1,3})*)?)?[m|K]//g"'
+alias gpo='git pull origin $(git rev-parse --abbrev-ref HEAD)'
 
 if [[ -s $HOME/.pythonbrew/etc/bashrc ]] ; then source $HOME/.pythonbrew/etc/bashrc; fi
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
