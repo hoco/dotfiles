@@ -4,6 +4,8 @@ export GOPATH=$HOME/.go
 export PATH=/opt/local/bin:opt/local/sbin:/usr/local/mysql/bin:/Applications/android-sdk/platform-tools:$HOME/.nodebrew/current/bin:$GOPATH/bin:/usr/local/bin:/opt/chefdk/bin:$PATH
 export MANPATH=/opt/local/share/man:/opt/local/man:$MANPATH
 export EDITOR=/usr/bin/vim
+# See: https://stackoverflow.com/questions/46591470/unicorn-with-ruby-2-4-1-causing-weird-crash
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
 alias ls='ls -G'
 alias be='bundle exec'
